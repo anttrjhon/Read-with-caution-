@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">                       <strong>Dear Aizell,</strong>
+                        <p>
+                            Hi, you already know who I am but still Ill introduce myself so my name is John Quimbo piro para short you can call me baby. Emz.
+So as you knew from Alyza that I like you, piro hindi, I mean joke lang crush talaga kita, piro dati yun and dati is kanina, basta for real I realy like you piro not in a way na I wanna date you, but maybe a little gusto kita maging love of my life, piro feeling ko youre not into this kind of things pa as far as I know.
+Even though still Im here having a liking to you and hopefully you can give me a chance to show you how sincere my feelings are and i surely wont disappoint you.
+                        </p>
+                      <p>Sincerly, J.C.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
